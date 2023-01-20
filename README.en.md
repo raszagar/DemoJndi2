@@ -1,11 +1,11 @@
 ## DemoJndi2
 
-Ejemplo de Spring boot con varios jndi con JPA
+Spring boot example with multiple jndi with JPA
 
-Los datos del jndi del tomcat embebido están en [DemoJndi2Application.java](/src/main/resources/application.properties)
+The jndi data of the embedded tomcat is in [DemoJndi2Application.java](/src/main/resources/application.properties)
 
 
-Base datos 1 (db1):
+Database 1 (db1):
 
 ~~~
 -- bdlocal.asistentes definition
@@ -19,7 +19,7 @@ CREATE TABLE `asistentes` (
 ALTER TABLE bdlocal.asistentes MODIFY COLUMN id bigint auto_increment NOT NULL;
 ~~~
 
-Base datos 2 (db2):
+Database 2 (db2):
 
 ~~~
 -- bdlocal2.personas definition
@@ -35,7 +35,7 @@ ALTER TABLE bdlocal2.personas MODIFY COLUMN id bigint auto_increment NOT NULL;
 ~~~
 
 
-Más info:  
+More info:  
 <https://www.baeldung.com/spring-boot-configure-multiple-datasources>  
 <https://stackoverflow.com/questions/45663025/spring-data-jpa-multiple-enablejparepositories>  
 <https://stackoverflow.com/questions/41941147/configuring-two-datasources-by-jndi-lookup-with-springboot>
