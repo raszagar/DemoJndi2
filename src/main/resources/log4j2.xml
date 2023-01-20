@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss,SSS} [%-5p][%c][%C{1}.%M:%L]: %m%n"/>
+        </Console>
+        <File name="fichero" fileName="D:/Formacion/springboot/Logs/demoJndi2.log">
+            <PatternLayout>
+                <Pattern>%d{dd-MM-yyyy HH:mm:ss,SSS} [%-5p][%c][%C{1}.%M:%L]: %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="es.jose" level="debug" additivity="false">
+        	<AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="fichero"/>
+        </Logger>
+        <Logger name="org.springframework.boot" level="info" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="fichero"/>
+        </Logger>
+    </Loggers>
+</Configuration>
