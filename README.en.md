@@ -1,7 +1,7 @@
 ## DemoJndi2
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](/README.md)
-[![es](https://img.shields.io/badge/lang-es-yellow.svg)](/README.es.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](/README.en.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](/README.md)
 
 Spring boot example with multiple jndi with JPA
 
