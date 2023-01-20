@@ -1,5 +1,8 @@
 ## DemoJndi2
 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](/README.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](/README.es.md)
+
 Spring boot example with multiple jndi with JPA
 
 The jndi data of the embedded tomcat is in [DemoJndi2Application.java](/src/main/resources/application.properties)
